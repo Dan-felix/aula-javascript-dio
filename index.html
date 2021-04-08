@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Minha Página</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="./js/main.js"></script>
+    </head>
+    <body onload="load()"> <!--Onload está carregando a function 'load' que trás, neste caso, um alert ao acessar a página-->
+        <h1>Minha Página</h1>
+        <button type="button" onclick="bclick()">Clique aqui</button>
+        <h3 id="agradecimento"></h3>
+        <br>
+        <button type="button" onclick="redirectb()">Ir até Nintendo</button> 
+        <br>
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p> <!--'This é usado para manter a função funcionando só para este elemento'-->
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+    </body>
+</html>
